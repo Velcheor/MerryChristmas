@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/merry">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/geatvibe_regular"
+        android:padding="16dp"
+        android:rotation="-15"
+        android:text="Merry Christmas\n         and\n     Happy New Year!"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From, Miroslav"
+        android:textSize="40sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:fontFamily="@font/geatvibe_regular"
+        android:textColor="@android:color/holo_purple"
+        android:id="@+id/textView" />
+
+    <com.jetradarmobile.snowfall.SnowfallView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:snowflakeAlphaMax="255"
+        app:snowflakeAlphaMin="150"
+        app:snowflakeAngleMax="5"
+        app:snowflakeImage="@drawable/snow_flake_3"
+        app:snowflakesAlreadyFalling="false"
+        app:snowflakesFadingEnabled="true"
+        app:snowflakeSizeMax="32dp"
+        app:snowflakeSizeMin="8dp"
+        app:snowflakeSpeedMax="8"
+        app:snowflakeSpeedMin="4"
+        app:snowflakesNum="250"
+        />
+
+</RelativeLayout>
